@@ -1,0 +1,51 @@
+baseURL = 'https://example.org/'
+locale = 'en-us'
+title = 'Elijahbrnv'
+theme = 'PaperMod'
+
+pagination.pagerSize = 10
+
+[params]
+  env = 'production'
+  description = 'Reverse engineering, low-level systems, game security.'
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  defaultTheme = 'auto'
+
+  [params.homeInfoParams]
+    Title = 'Hi, my name is Elijah'
+    Content = 'Reverse engineering, x86-64, game security and programming. Writeups about whatever binaries I am currently taking apart.'
+
+  [[params.socialIcons]]
+    name = 'github'
+    url = 'https://github.com/ilyxabatko'
+
+  [[params.socialIcons]]
+    name = 'twitter'
+    url = 'https://x.com/elijahbrnv'
+  [[params.socialIcons]]
+    name = 'linkedin'
+    url = 'https://www.linkedin.com/in/ilya-barinov-6b100b208/'
+
+[[menu.main]]
+  identifier = 'posts'
+  name = 'Posts'
+  url = '/posts/'
+  weight = 10
+
+[[menu.main]]
+  identifier = 'about'
+  name = 'About'
+  url = '/about/'
+  weight = 20
+
+[markup.highlight]
+  noClasses = false
+  codeFences = true
+  guessSyntax = true
+  lineNos = false
+  style = 'monokai'
